@@ -36,19 +36,19 @@ $$ \lambda_j = \frac{2\pi}{\sqrt{\omega \mu / (2 \rho_j)}} = 10^3 \cdot \sqrt{10
 
 ### 可控源音频大地电磁测深
 
-根据（付海涛 等，2019）及（张健，2011），$ N $ 层水平层状介质表面上水平电偶极子产生的电磁场各分量的表达式为：
+根据（付海涛 等，2019）及（张健，2011），$ N ​$ 层水平层状介质表面上水平电偶极子产生的电磁场各分量的表达式为：
 
-$$ E_r = \frac{ I \text{dL} }{2\pi} \cos\phi \left[ \frac{ i \omega \mu }{r} \int_0^\infty \frac{1}{ \lambda + m_1/R^* } J_1(\lambda r) d\lambda - \rho_1 \int_0^\infty \frac{\lambda m_1}{R} J_0(\lambda r) d\lambda + \frac{\rho_1}{r} \int_0^\infty \frac{m_1}{R} J_1(\lambda r) d\lambda \right] ​$$
+$$ E_r = \frac{ I \text{dL} }{2\pi} \cos\phi \left[ \frac{ i \omega \mu }{r} \int_0^\infty \frac{1}{ \lambda + m_1/R^\star } J_1(\lambda r) d\lambda - \rho_1 \int_0^\infty \frac{\lambda m_1}{R} J_0(\lambda r) d\lambda + \frac{\rho_1}{r} \int_0^\infty \frac{m_1}{R} J_1(\lambda r) d\lambda \right] ​$$
 
-$$ E_\phi = \frac{ I \text{dL} }{2\pi} \sin\phi \left[ \frac{\rho_1}{r} \int_0^\infty \frac{m_1}{R} J_1(\lambda r) d\lambda - i \omega \mu \int_0^\infty \frac{\lambda}{\lambda + m_1/R^*} J_0(\lambda r) d\lambda + \frac{ i \omega \mu }{r} \int_0^\infty \frac{1}{\lambda + m_1/R^*} J_1(\lambda r) d\lambda \right] ​$$
+$$ E_\phi = \frac{ I \text{dL} }{2\pi} \sin\phi \left[ \frac{\rho_1}{r} \int_0^\infty \frac{m_1}{R} J_1(\lambda r) d\lambda - i \omega \mu \int_0^\infty \frac{\lambda}{\lambda + m_1/R^\star} J_0(\lambda r) d\lambda + \frac{ i \omega \mu }{r} \int_0^\infty \frac{1}{\lambda + m_1/R^\star} J_1(\lambda r) d\lambda \right] ​$$
 
-$$ H_r = - \frac{ I \text{dL} }{ 2 \pi r } \sin\phi \left[ \int_0^\infty \frac{\lambda}{\lambda + m_1/R^*} J_1(\lambda r) d\lambda + r \int_0^\infty \frac{m_1}{R^*} \frac{\lambda}{\lambda + m_1/R^*} J_0(\lambda r) d\lambda \right] ​$$
+$$ H_r = - \frac{ I \text{dL} }{ 2 \pi r } \sin\phi \left[ \int_0^\infty \frac{\lambda}{\lambda + m_1/R^\star} J_1(\lambda r) d\lambda + r \int_0^\infty \frac{m_1}{R^\star} \frac{\lambda}{\lambda + m_1/R^\star} J_0(\lambda r) d\lambda \right] $$
 
-$$ H_\phi = \frac{ I \text{dL} }{ 2 \pi r } \cos\phi \int_0^\infty \frac{\lambda}{\lambda + m_1/R^*} J_1(\lambda r) d\lambda $$
+$$ H_\phi = \frac{ I \text{dL} }{ 2 \pi r } \cos\phi \int_0^\infty \frac{\lambda}{\lambda + m_1/R^\star} J_1(\lambda r) d\lambda ​$$
 
-$$ H_z = \frac{ I \text{dL} }{2\pi} \sin\phi \int_0^\infty \frac{\lambda^2}{\lambda + m_1/R^*} J_1(\lambda r) d\lambda $$
+$$ H_z = \frac{ I \text{dL} }{2\pi} \sin\phi \int_0^\infty \frac{\lambda^2}{\lambda + m_1/R^\star} J_1(\lambda r) d\lambda $$
 
-$$ R^* = \coth \left \lbrace m_1 d_1 + \coth^{ - 1} \left[ \frac{m_1}{m_2} \cdot \coth \left( m_2 d_2 + \coth^{ - 1} \left[ \frac{m_2}{m_3} \cdot \coth \left( m_3 d_3 + \cdots + \coth^{ - 1} \frac{m_{N - 1}}{m_N} \right) \right] \right) \right] \right \rbrace $$
+$$ R^\star = \coth \left \lbrace m_1 d_1 + \coth^{ - 1} \left[ \frac{m_1}{m_2} \cdot \coth \left( m_2 d_2 + \coth^{ - 1} \left[ \frac{m_2}{m_3} \cdot \coth \left( m_3 d_3 + \cdots + \coth^{ - 1} \frac{m_{N - 1}}{m_N} \right) \right] \right) \right] \right \rbrace $$
 
 $$ R = \coth \left \lbrace m_1 d_1 + \coth^{ - 1} \left[ \frac{m_1 \rho_1}{m_2 \rho_2} \cdot \coth \left( m_2 d_2 + \coth^{ - 1} \left[ \frac{m_2 \rho_2}{m_3 \rho_3} \cdot \coth \left( m_3 d_3 + \cdots + \coth^{ - 1} \frac{m_{N - 1} \rho_{N - 1}}{m_N \rho_N} \right) \right] \right) \right] \right \rbrace $$
 
@@ -151,4 +151,5 @@ $$ \rho_\omega^{H_z / H_y} = \frac{4 r^2 \omega \mu}{9} \left| \frac{H_z}{H_y} \
 - 朱仁学，2003. **大地电磁测深法**[M].
 - 付海涛，罗维斌，丁志军，余其林，张世宽，2019. **水平电偶极源层状模型垂直磁场全区视电阻率计算方法**[J]. 物探与化探, 43(6), 1309-1319. http://doi.org/10.11720/wtyht.2019.0325
 - 张健，2011. **可控源音频大地电磁法一维正反演研究**[D]. 四川成都：成都理工大学.
-- Guptasarma and Singh, 1997. **New digital linear filters for Hankel J_0 and J_1 transforms**. Geophysical Prospecting, 45, 745-762.
+- Guptasarma and Singh, 1997. **New digital linear filters for Hankel J_0 and J_1 transforms**[J]. Geophysical Prospecting, 45, 745-762.
+
